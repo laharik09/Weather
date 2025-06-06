@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" id="cityInput" placeholder="Enter Your Location">
+            <button onclick="getWeather()"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="weather-info" id="weatherBox">
+            <img id="weatherIcon" src="" alt="weather-icon">
+            <h2 id="temp"></h2>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+        <div class="not-found" id="notFound">
+            <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-c78c-61f7-b084-bc76ad6e1d17/raw?se=2025-06-06T07%3A15%3A26Z&sp=r&sv=2024-08-04&sr=b&scid=113b4b6f-32ef-50d6-8f97-9038b705fbe6&skoid=c953efd6-2ae8-41b4-a6d6-34b1475ac07c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-06T02%3A01%3A44Z&ske=2025-06-07T02%3A01%3A44Z&sks=b&skv=2024-08-04&sig=jBq6UBzahvB5uwwJ7mDSqo0sx0ESv/YRfsBOxGWWpEM%3D"
+                alt="Not found">
+            <p>Oops!! Location not found!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
